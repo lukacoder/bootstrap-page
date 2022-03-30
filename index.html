@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Bootstrap Kedy.Coder>
+    <meta name="generator" content="Bootstrap Kedy.Coder">
+    <title>Bootstrap Kedy.Coder</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
+  </head>
+  <body>
+    <style> 
+       .gradient-mode{
+  margin : 0;
+  padding: 0;
+  font-family:sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+      .light-mode{
+        background-color: black;
+      }
+    </style>
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("gradient-mode");
+      }
+      function lightmode() {
+         var element = document.body;
+         element.classList.toggle("light-mode");
+      }
+      </script>
+<main>
+  <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Bootstrap Tek Tıkla Gradient ve Normal Sayfa Modu. Kedy.Coder Tarafından Yazılmıştır.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button onclick="myFunction()" type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"> Color Gradient Mod</button>
+          <button onclick="lightmode()" type="button" class="btn btn-outline-light btn-lg px-4">Black Mod</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-example-divider mb-0"></div>
+  <center><font color="red">Değişicek Burası</font></center>
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
